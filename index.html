@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!--font Awesome stylesheet-->
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   
+     <!--google font css-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oregano|Pompiere" rel="stylesheet">
+
+
+
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+    <div id="loader">
+        <i class="fas fa-dot-circle"></i>
+    </div>
+    <!--    <a href="#"><i class="fas hamburger"></i></a>-->
+    <div class="hamburger" id="hamburger-1">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+
+    </div>
+
+    <div style="display:none;" id="myDiv" class="animate-top">
+        <div class="section_01">
+
+            <div class="myhome">
+                <a href="#">
+                    <h1>PIAO<br>QUN FEN</h1>
+                </a>
+            </div>
+        </div>
+        <header id="head">
+            <ul>
+                <li>
+                    <a href="index.html" class="effect-box">HOME</a>
+
+                </li>
+                <li><a href="#" class="effect-box">ABOUT </a></li>
+                <li>
+                    <a href="#" class="effect-box">PORTFOLIO</a>
+
+                </li>
+                <li><a href="#" class="effect-box">CONTACT</a></li>
+            </ul>
+
+        </header>
+    </div>
+
+    <div class="section_02">
+        <h1>MY <br>NAME IS</h1><br>
+        <h2><span>P</span>IAO.<br> <span>Q</span>UN FEN</h2>
+
+        <div class="skill">
+            <h1>SKILL</h1>
+            <ul>
+                <li>HTML5</li>
+
+                <li>CSS3</li>
+
+                <li>Jquery</li>
+
+                <li>javascript</li>
+
+            </ul>
+            <div class="skill_bar">
+                <div class="one" style="background:#98bf21;height:10px;width:1px;"></div>
+                <div class="two" style="background:yellow;height:10px;width:1px;"></div>
+                <div class="three" style="background:red;height:10px;width:1px;"></div>
+                <div class="four" style="background:blue;height:10px;width:1px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section_03">
+        <h1>PORTFOLIO</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-item-image">
+                    <a href="http://qunqun1027.dothome.co.kr/"><img src="images/portfolio1.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>My Portfolio</h3><span>참여도 *****</span>
+                    </div>
+                </div>
+                <div class="gallery-item-image">
+                   <a href="http://qunqun1027.dothome.co.kr/pqf"><img src="images/portfolio2.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>Team Project</h3><span>참여도 **</span>
+                    </div>
+                </div>
+                <div class="gallery-item-image">
+                    <a href="https://qunqun1027.github.io/car/"><img src="images/portfolio3.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>My Portfolio</h3><span>참여도 *****</span>
+                    </div>
+                </div>
+                <div class="gallery-item-image">
+                    <a href="#"><img src="images/banner1.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>My banner</h3><span>MONTBLANC BRAND BANNER</span>
+                    </div>
+                </div>
+                <div class="gallery-item-image">
+                    <a href="#"><img src="images/banner2.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>My banner</h3><span>sansung GALAXY A8 BANNER</span>
+                    </div>
+                </div>
+                <div class="gallery-item-image">
+                    <a href="#"><img src="images/banner3.png" alt="imgs01"></a>
+                    <div class="gallery-item-caption">
+                        <h3>My banner</h3><span>Dior BRAND perfume BANNER</span>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <li><a href="#"><img src="images/portfolio2.png" alt="imgs02"></a></li>
+            <li><a href="#"><img src="images/portfolio3.png" alt="imgs03"></a></li>
+            <li><img src="images/banner1.png" alt="imgs04"></li>
+            <li><img src="images/banner2.png" alt="imgs05"></li>
+            <li><img src="images/banner3.png" alt="imgs06"></li>
+-->
+
+        </div>
+        <div class="btn">
+            <a onclick="img_move()">prev /</a>
+            <a onclick="img_move2()">next</a>
+        </div>
+
+
+    </div>
+    <div class="section_04">
+
+        <h1>Contact me</h1>
+        <P>Please leave a message</P>
+        <form>
+            <label for="fname">NAME</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="email">EMAIL</label><br>
+            <input type="email" id="email" name="email" value=""><br>
+            <label type="text">MASSAGE</label><br>
+            <input type="text" id="message" name="message" value="">
+            <a href="#">SEND</a>
+        </form>
+
+        <div class="icons">
+            <ul>
+                <li><a class="facebook" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a class="google-plus" href="#"><i class="fab fa-google-plus-square"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <script src="www.blueb.co.kr/SRC2/fsone/full-page-scroll.js"></script>
+    <script type="text/javascript">
+        new fullScroll({
+            displayDots: true,
+            dotsPosition: 'left',
+            animateTime: 0.7,
+            animateFunction: 'ease'
+        });
+    </script>
+
+    <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+
+        $(function() {
+            function swing() {
+                $('.fa-angle-double-down').animate({
+                    'top': '0px'
+                }, 1000).animate({
+                    'top': '30px'
+                }, 1000, swing);
+            }
+            swing();
+        });
+
+        $(window).scroll(function() {
+
+            // selectors
+            var $window = $(window),
+                $body = $('body'),
+                $panel = $('.panel');
+
+            var scroll = $window.scrollTop() + ($window.height() / 1);
+
+            $panel.each(function() {
+                var $this = $(this);
+                if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+                    // Remove all classes on body with color-
+                    $body.removeClass(function(index, css) {
+                        return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+                    });
+
+                    // Add class of currently active div
+                    $body.addClass('color-' + $(this).data('color'));
+
+
+                }
+            });
+
+        }).scroll();
+
+        /*******************slider***************************/
+        function img_move() {
+            $('.port img:first').appendTo('.port');
+        }
+
+        function img_move2() {
+            $('.port img:last').prependTo('.port');
+        }
+
+        /******************home****************************/
+        $(function() {
+            $('.myhome').on('click', function() {
+                $('.section_01').fadeOut(1000);
+                $('header').show(2000);
+            });
+        });
+
+        /*************위 아래 무한반복****************************/
+        setInterval(function() {
+            $('.myhome').animate({
+                top: '100'
+            }, 'slow').animate({
+                top: '120'
+            }, 'slow');
+        }, 1000);
+
+        /*************헤더 아이콘 전환****************************/
+        $(function() {
+            $('#head li').on('click', function() {
+                $('header').hide(1000);
+                $('.hamburger').show(1000);
+            });
+            $('.hamburger').on('click', function() {
+                $(this).hide(1000);
+                $('header').show(1000);
+            });
+        });
+
+
+
+
+        $(function() {
+            //about 클릭시
+            $('#head li:nth-child(2)').on('click', function() {
+                $('.section_02').show(100, function() {
+                    skill_ani();
+                });
+                $('.hamburger').on('click', function() {
+                    $(this).hide(1000, function() {
+                        skill_no_ani(100);
+                    });
+                    $('.section_02').hide(1000);
+
+                });
+            });
+
+            //포토폴리오 클릭시
+            $('#head li:nth-child(3)').on('click', function() {
+                $('.section_03').show(100);
+                $('.hamburger').on('click', function() {
+                    $(this).hide(1000);
+                    $('.section_03').hide(1000);
+                });
+            });
+            // 접속 클릭시
+            $('#head li:nth-child(4)').on('click', function() {
+                $('.section_04').show(100);
+                $('.hamburger').on('click', function() {
+                    $(this).hide(1000);
+                    $('.section_04').hide(1000);
+                });
+            });
+        });
+        // skill bra
+        function skill_ani() {
+            $('.one').animate({
+                width: '500'
+            }, 3000);
+            $('.two').animate({
+                width: '450'
+            }, 3000);
+            $('.three').animate({
+                width: '400'
+            }, 3000);
+            $('.four').animate({
+                width: '380'
+            }, 3000);
+        }
+
+        function skill_no_ani() {
+            $('.one').animate({
+                width: '1'
+            }, 500);
+            $('.two').animate({
+                width: '1'
+            }, 500);
+            $('.three').animate({
+                width: '1'
+            }, 500);
+            $('.four').animate({
+                width: '1'
+            }, 500);
+        }
+        /**************span line*******************************/
+        $(function() {
+            $(".hamburger").hover(function() {
+                $(this).toggleClass("is-active");
+            });
+        });
+    </script>
+</body>
+
+</html>
